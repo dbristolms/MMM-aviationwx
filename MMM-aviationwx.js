@@ -238,7 +238,7 @@ Module.register("MMM-aviationwx", {
   socketNotificationReceived: function(notification, payload) {
     if (notification === "WX_RESULT") {
       this.wxdata = payload;
-      this.updateDom(self.config.fadeSpeed);
+      this.updateDom();
     }    
   },
 });
