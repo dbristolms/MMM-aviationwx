@@ -229,8 +229,8 @@ Module.register("MMM-aviationwx", {
 
   // Data Handling Functions
   getWX: function () {
-    var metarUrl = "https://aviationweather.gov/gis/scripts/MetarJSON.php?density=all"; 
-    var FAAUrl = "http://services.faa.gov/airport/status/<IATA_CODE>?format=application/json"
+    var metarUrl = "https://aviationweather.gov/cgi-bin/json/MetarJSON.php?density=all"; 
+    var FAAUrl = "https://soa.smext.faa.gov/asws/api/airport/status/"
     var payload = [this.config.airports, metarUrl, FAAUrl];
     this.sendSocketNotification("GET_WX", payload);
   },
