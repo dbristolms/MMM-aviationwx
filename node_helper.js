@@ -52,7 +52,7 @@ module.exports = NodeHelper.create({
 
       // Now check for FAA data
       airports.forEach(function(airport, index) {
-        var FAACheckUrl = FAAUrl.replace("<IATA_CODE>", airport.substr(1)); // FAA takes IATA codes
+        var FAACheckUrl = FAAUrl + airport.substr(1); // FAA takes IATA codes
 
         request({url: FAACheckUrl, method: "GET"}, function (err, rsp, bod) {
           if (!error && rsp.statusCode == 200) {
