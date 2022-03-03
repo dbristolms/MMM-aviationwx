@@ -14,7 +14,7 @@ The module includes hyperlinks and tooltips that are generally not accessible wi
 ## Installation
 
 1. Navigate to your MagicMirror `modules` directory.
-2. Execute `git clone https://github.com/stuloh/MMM-aviationwx`.
+2. Execute `git clone https://github.com/dbristolms/MMM-aviationwx`.
 3. Add the module to your MagicMirror's `config.js` file (see next section).
 
 ## Using the Module
