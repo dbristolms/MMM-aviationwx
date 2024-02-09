@@ -145,7 +145,7 @@ Module.register("MMM-aviationwx", {
       // Show Airport Name and any delays
       var nameCell = document.createElement("td");
       nameCell.className = "bright nodec left-align";
-      var tafUrl = "https://aviationweather.gov/taf/data?ids=" + icao + "&format=decoded&metars=on&layout=on";
+      var tafUrl = "https://aviationweather.gov/api/data/taf?ids=" + icao + "&format=decoded&metars=on&layout=on";
       nameCell.innerHTML = this.wrapInLink(iata, tafUrl) + "&nbsp;";
       nameCell.setAttribute("title", name + " Airport");
       if (delay === 1) {
